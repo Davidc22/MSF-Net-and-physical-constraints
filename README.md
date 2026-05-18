@@ -12,22 +12,7 @@ Learnable Spectral Filter (LSF): adaptive per-frequency gating on the FFT spectr
 Multi-Scale Spectral Fusion (MSF): dual-scale FFT with zero-padding for enhanced spectral resolution
 Cross-Channel Spectral Interaction (CCSI): lightweight cross-channel calibration (10 parameters)
 
-The framework is validated across four ocean regions (Xisha, Caribbean, Gulf of Mexico, Pacific) against eight baseline architectures and two satellite gravity products (SIO v25.1/v27.1).
-Repository Structure
-├── 8modelcomparison/            # Cross-region architecture comparison
-│   ├── MSFNet_modelcomparison_xisha.py
-│   ├── MSFNet_modelcomparison_caribbean.py
-│   ├── MSFNet_modelcomparison_mexico.py
-│   ├── MSFNet_modelcomparison_pac.py
-│   └── run_all.sh               # Shell script for parallel execution
-│
-├── ablation_and_physicalconstraints/  # Ablation and physics integration
-│   └── FA_integrated_final.py   # Component ablation + explicit/implicit physics
-│
-├── data/                        # Input data (satellite gravity + ground truth)
-│
-└── figuresall/                  # Figure generation
-    └── paper_figures_all.py     # All paper figures (Fig 3–8)
+
 Experiments
 Cross-Region Model Comparison (Table 3)
 Compares 8 architectures (MLP, CNN, Transformer, SA, ES-MHSA, TransUNet, FA, MSF-Net) across 4 regions with 3 random seeds:
